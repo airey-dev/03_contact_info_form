@@ -6,5 +6,5 @@ function sendMessage() {
     button.outerHTML = '<p id="submitMessage" class="submit-message">Message sent! ✅</p>';
     
     // Get the home link element and add focus to it
-    
+    document.getElementById('homeLink').focus();
 }
