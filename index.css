@@ -90,8 +90,21 @@ body, .contact-input, .address-input, .radio-container p {
 .city-select:focus-visible {
     outline: 3px solid #bbd5ff;
 }
-fieldset {
-  border: 2px solid #333;
-  border-radius: 40px;
-  padding: 10px 10px 10px 20px;
+.popover-message {
+    display: block;
+    margin-top: 10px;
+    color: #e12938;
+    font-size: 0.9rem;
+}
+.contact-submit-button:disabled {
+    border-color: #aaaaaa;
+}
+.contact-submit-button:disabled:hover {
+    cursor: not-allowed;
+}
+.contact-submit-button:disabled:active {
+    transform: none;
+}
+.contact-submit-button:disabled:hover + .popover-message {
+    display: block;
 }
